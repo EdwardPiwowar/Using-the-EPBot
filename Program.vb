@@ -32,14 +32,14 @@ Module Program
 
         '---example hand
         str_hand = "01BB8519F369D29DF04BA17EF45D"
+        Console.WriteLine("Current hand: " & str_hand)
         Console.WriteLine("Enter another deal or skip")
         entered_hand = Console.ReadLine()
-        Console.WriteLine("Entered deal: " & str_hand)
         If Len(entered_hand) = 28 Then
             str_hand = entered_hand
         End If
         set_hand(str_hand)
-        Console.WriteLine("Entered hands:")
+        Console.WriteLine("Entered hand: " & str_hand)
         Console.WriteLine("")
 
         For i = C_SPADES To C_CLUBS Step -1
